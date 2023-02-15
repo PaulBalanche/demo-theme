@@ -22,9 +22,10 @@
     FRONT_ENV='production'
 
 **Update /etc/hosts file :**
+
 - add : 127.0.0.1 local.wordpress
 
-    wpe
+`wpe`
 
 - choose "Bedrock | WordPress Boilerplate"
 - then all default values
@@ -32,6 +33,7 @@
 
 
 **Edit config/application.php - Add :**
+
     Config::define('THEME_FRONT_END_RELATIVE_PATH', env('THEME_FRONT_END_RELATIVE_PATH'));
     Config::define('THEME_FRONTSPEC_JSON_FILENAME', env('THEME_FRONTSPEC_JSON_FILENAME'));
     Config::define('THEME_VIEW_ROOT_LOCATION', env('THEME_VIEW_ROOT_LOCATION'));
@@ -48,5 +50,6 @@
     composer install --working-dir=web/app/plugins/wp-advanced-block-theme
 
 - **Install Wordpress**
+
 - Activate "WP advanced block theme" plugins
 - Activate "Customize Theme Details 01-basic" theme

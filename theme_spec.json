@@ -1,0 +1,125 @@
+{
+    "allowed_block_types": [
+        "core/paragraph",
+        "core/list",
+        "core/heading",
+        "core/button",
+        "custom/wpe-container",
+        "custom/wpe-grid",
+        "custom/wpe-column",
+        "custom/wpe-component",
+        "custom/wpe-slider",
+        "custom/wpe-slide"
+    ],
+    "show_admin_bar": false,
+    "i18n": {
+        "site-title": "Basic Wordpress boilerplate theme",
+        "copyright": "© 2022 Basic Wordpress boilerplate theme"
+    },
+    "text_domain": "wpe-basic-boilerplate-theme",
+    "spacing": "coffeekraken",
+    "styles": {
+        "typo": {
+            "values": {
+                "paragraph-lead": {
+                    "name": "Paragraph lead",
+                    "class": "lead",
+                    "type": "block",
+                    "tag": "p"
+                },
+                "bold": {
+                    "name": "Bold",
+                    "class": "typo-bold",
+                    "type": "inline"
+                },
+                "italic": {
+                    "name": "Italic",
+                    "class": "typo-italic",
+                    "type": "inline"
+                }
+            }
+        }
+    },
+    "layout": {
+        "container": {
+            "default": "1280px"
+        }
+    },
+    "container": {
+        "is_main": false,
+        "style": [
+            {
+                "label": "Light",
+                "value": "light"
+            },
+            {
+                "label": "Dark",
+                "value": "dark"
+            }
+        ]
+    },
+    "gridConfig": {
+        "totalColumns": 12,
+        "variations": [
+            {
+                "name": "column-2",
+                "title": "2 column",
+                "icon": "column1",
+                "attributes": { "gridCountColumns": 2 },
+                "innerBlocks": [
+                    {
+                        "name": "custom/wpe-column",
+                        "attributes": { "widthDesktop": 6, "widthTablet": 6, "widthMobile": 12 }
+                    },
+                    {
+                        "name": "custom/wpe-column",
+                        "attributes": { "columnStartDesktop": 7, "columnStartTablet": 7, "widthDesktop": 6, "widthTablet": 6, "widthMobile": 12,"rowStartMobile": 2 }
+                    }
+                ]
+            },
+            {
+                "name": "column-3",
+                "title": "3 column",
+                "icon": "columns3",
+                "attributes": { "gridCountColumns": 3 },
+                "innerBlocks": [
+                    {
+                        "name": "custom/wpe-column",
+                        "attributes": { "widthDesktop": 4, "widthTablet": 4, "widthMobile": 12 }
+                    },
+                    {
+                        "name": "custom/wpe-column",
+                        "attributes": { "columnStartDesktop": 5, "columnStartTablet": 5, "widthDesktop": 4, "widthTablet": 4, "widthMobile": 12,"rowStartMobile": 2 }
+                    },
+                    {
+                        "name": "custom/wpe-column",
+                        "attributes": { "columnStartDesktop": 9, "columnStartTablet": 9, "widthDesktop": 4, "widthTablet": 4, "widthMobile": 12,"rowStartMobile": 2 }
+                    }
+                ]
+            }
+        ]
+    },
+    "galleryType": [
+        {
+            "label": "Test",
+            "value": "test"
+        },
+        {
+            "label": "Test 2",
+            "value": "test_2"
+        }
+    ],
+    "custom_blocks_routing": {
+        "bare-container": "layout/wpe-container",
+        "bare-layout": "layout/wpe-grid",
+        "bare-cell": "layout/wpe-column",
+        "button": "core/button",
+        "image": "core/image",
+        "text-image": "core/media-text",
+        "components-slider": "layout/wpe-slider",
+        "components-slide": "layout/wpe-slide"
+    },
+    "add_ons": [
+        "coffeekraken"
+    ]
+}

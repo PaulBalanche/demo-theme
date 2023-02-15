@@ -1,0 +1,13 @@
+<section class="section-slider {{ paddingClasses(padding) }} {{ marginClasses(margin) }}" s-specs="views.sections.slider"
+    {{ specsValues(_context)|raw }}
+    >
+    <div class="s-container">
+        <s-slider controls loop>
+            {% for slide in slides %}
+                <div s-slider-slide>
+                    <img src="{{ slide.url }}" />
+                </div>
+            {% endfor %}
+        </s-slider>
+    </div>
+</section>

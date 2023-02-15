@@ -29,3 +29,5 @@
 
 - Activate "WP advanced block theme" plugins
 - Activate "Customize Theme Details 01-basic" theme
+
+`wp wpe-blocks generate_component_blocks`

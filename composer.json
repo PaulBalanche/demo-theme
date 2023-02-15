@@ -1,0 +1,14 @@
+{
+    "name": "wpextend/demo-theme",
+    "version": "1.0.0",
+    "type": "wordpress-theme",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Paul Balanche",
+            "email": "paul.balanche@gmail.com",
+            "homepage": "https://github.com/PaulBalanche/",
+            "role": "Developer"
+        }
+    ]
+}
